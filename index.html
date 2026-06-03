@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>职业卫生个案研究｜张月 22301020109</title>
+  <meta name="description" content="职业卫生个案研究作业展示页，包含职业分析示意图、访谈视频、访谈文字稿与采访点评文件下载。" />
+  <style>
+    :root {
+      --bg: #f4f8fb;
+      --card: #ffffff;
+      --ink: #111827;
+      --muted: #5b6472;
+      --blue: #2563eb;
+      --blue-soft: #eaf2ff;
+      --line: rgba(30, 64, 175, 0.14);
+      --shadow: 0 20px 55px rgba(31, 60, 110, 0.12);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(147, 197, 253, 0.32), transparent 34%),
+        linear-gradient(145deg, #f7fbff 0%, #eef5f9 48%, #f9fbfd 100%);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 30px 18px 58px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-bottom: 22px;
+    }
+
+    .hero-text, .hero-cover, .card {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-text {
+      padding: 34px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: #1d4ed8;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.16;
+      letter-spacing: -0.04em;
+      color: #0f172a;
+    }
+
+    .subtitle {
+      margin: 17px 0 0;
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    .meta {
+      display: grid;
+      gap: 8px;
+      margin-top: 23px;
+      padding: 18px;
+      background: rgba(239, 246, 255, 0.72);
+      border: 1px solid rgba(37, 99, 235, 0.14);
+      border-radius: 18px;
+      color: #243044;
+      font-size: 15px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(37, 99, 235, 0.18);
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: #1d4ed8;
+      box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+    }
+
+    .btn.secondary {
+      background: white;
+      color: #1d4ed8;
+    }
+
+    .hero-cover {
+      padding: 14px;
+      overflow: hidden;
+    }
+
+    .cover-img {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 18px;
+      display: block;
+      background: #e5e7eb;
+    }
+
+    .card {
+      padding: 26px;
+      margin-top: 20px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 16px;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+      color: #17306d;
+    }
+
+    .section-title span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 17px;
+    }
+
+    .infographic-full {
+      width: 100%;
+      max-width: 980px;
+      display: block;
+      margin: 12px auto 0;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+      background: white;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 18px;
+      background: #000;
+      margin-top: 8px;
+      box-shadow: 0 16px 35px rgba(15, 23, 42, 0.11);
+    }
+
+    .hint {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .file {
+      padding: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      border-radius: 18px;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 162px;
+    }
+
+    .file strong {
+      display: block;
+      font-size: 17px;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .file p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .file .btn {
+      margin-top: 16px;
+      width: 100%;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .mini {
+      padding: 18px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f8fafc, #ffffff);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+    }
+
+    .mini b {
+      color: #1e3a8a;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .cover-img { min-height: auto; max-height: 620px; object-fit: contain; }
+      .downloads, .summary-grid { grid-template-columns: 1fr; }
+      .hero-text, .card { padding: 22px; }
+      .actions { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="badge">职业卫生分析 · 课程作业展示页</div>
+        <h1>26年工龄保洁员职业健康个案研究</h1>
+        <p class="subtitle">病因分析、职业卫生风险识别与分层干预建议</p>
+        <div class="meta">
+          <div><strong>提交人：</strong>张月　22301020109</div>
+          <div><strong>专业：</strong>预防医学</div>
+          <div><strong>材料：</strong>职业分析示意图、访谈视频、访谈文字稿、采访点评</div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="#infographic">查看示意图</a>
+          <a class="btn secondary" href="#video">观看访谈视频</a>
+          <a class="btn secondary" href="#downloads">下载作业文件</a>
+        </div>
+      </div>
+      <div class="hero-cover">
+        <img class="cover-img" src="assets/case_infographic.png" alt="职业卫生个案研究示意图" />
+      </div>
+    </section>
+
+    <section class="card" id="infographic">
+      <h2 class="section-title"><span>图</span>职业分析示意图</h2>
+      <p class="hint">老师打开网页后可直接看到此图；点击或长按图片也可保存。</p>
+      <img class="infographic-full" src="assets/case_infographic.png" alt="26年工龄保洁员职业健康个案研究：病因分析与干预对策" />
+    </section>
+
+    <section class="card" id="video">
+      <h2 class="section-title"><span>▶</span>访谈视频</h2>
+      <video controls preload="metadata" src="files/interview_video_zhangyue_22301020109.mp4"></video>
+      <p class="hint">如在线播放受网络影响，可点击下方按钮下载后观看。</p>
+      <div class="actions">
+        <a class="btn" href="files/interview_video_zhangyue_22301020109.mp4" download>下载访谈视频</a>
+      </div>
+    </section>
+
+    <section class="card" id="downloads">
+      <h2 class="section-title"><span>↓</span>作业材料下载</h2>
+      <div class="downloads">
+        <div class="file">
+          <div>
+            <strong>访谈文字稿</strong>
+            <p>包含受访者背景、采访问答与原始访谈记录。</p>
+          </div>
+          <a class="btn" href="files/interview_transcript.docx" download>下载 Word</a>
+        </div>
+        <div class="file">
+          <div>
+            <strong>采访点评</strong>
+            <p>包含职业健康挑战、职业卫生分析与改善建议。</p>
+          </div>
+          <a class="btn" href="files/interview_commentary.docx" download>下载 Word</a>
+        </div>
+        <div class="file">
+          <div>
+            <strong>职业分析示意图</strong>
+            <p>图解个案研究与分层控制策略，可直接下载图片。</p>
+          </div>
+          <a class="btn" href="assets/case_infographic.png" download>下载图片</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title"><span>✓</span>页面说明</h2>
+      <div class="summary-grid">
+        <div class="mini"><b>扫码即看</b><br />部署后将网址生成二维码，老师扫码即可进入本页面。</div>
+        <div class="mini"><b>首屏展示</b><br />职业分析示意图已放在首页首屏，打开后可直接看到核心成果。</div>
+        <div class="mini"><b>可下载</b><br />视频、文字稿、点评文件和示意图均提供下载入口。</div>
+      </div>
+    </section>
+
+    <footer>© 2026 张月｜职业卫生个案研究课程作业</footer>
+  </main>
+</body>
+</html>
